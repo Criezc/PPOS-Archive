@@ -1,0 +1,28 @@
+/* 
+##################################
+author : PT.Sejati Software
+Credits : www.sejatisoftware.co.id
+*/
+
+#tombol-tambah {
+  border-radius: 2px;
+  float: right;
+  border-color: #4cae4c;
+  color: white;
+  background: #5cb85c;
+  font-weight: 400;
+  font-size: 12px;
+  cursor: pointer;
+  box-shadow: none;
+  padding: 10px 20px;
+}
+
+#tombol-tambah:hover {
+  border-color: #78973b;
+  background-color: #89ad45;
+}
+
+#tombol-hapus {
+  color: red;
+  cursor: pointer;
+}

@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>SEJATI -PPOS</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Build whatever layout you need with our Architect framework."
+    />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <link
+      href="{{ url_for('static', filename='css/main.css') }}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{{ url_for('static', filename='css/style.css') }}"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <div
+      class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header"
+    >
+      <div class="app-header header-shadow bg-royal header-text-light">
+        <div class="app-header__logo">
+          <div class="logo-src"></div>
+          <div class="header__pane ml-auto">
+            <div>
+              <button
+                type="button"
+                class="hamburger close-sidebar-btn hamburger--elastic"
+                data-class="closed-sidebar"
+              >
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="app-header__mobile-menu">
+          <div>
+            <button
+              type="button"
+              class="hamburger hamburger--elastic mobile-toggle-nav"
+            >
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="app-header__menu">
+          <span>
+            <button
+              type="button"
+              class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav"
+            >
+              <span class="btn-icon-wrapper">
+                <i class="fa fa-ellipsis-v fa-w-6"></i>
+              </span>
+            </button>
+          </span>
+        </div>
+        <div class="app-header__content">
+          <div class="app-header-left">
+            <div class="search-wrapper">
+              <div class="input-holder">
+                <input
+                  type="text"
+                  class="search-input"
+                  placeholder="Type to search"
+                />
+                <button class="search-icon"><span></span></button>
+              </div>
+              <button class="close"></button>
+            </div>
+            <ul class="header-menu nav">
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="nav-link">
+                  <i class="nav-link-icon fa fa-database"> </i>
+                  Statistics
+                </a>
+              </li>
+              <li class="btn-group nav-item">
+                <a href="javascript:void(0);" class="nav-link">
+                  <i class="nav-link-icon fa fa-edit"></i>
+                  Projects
+                </a>
+              </li>
+              <li class="dropdown nav-item">
+                <a href="javascript:void(0);" class="nav-link">
+                  <i class="nav-link-icon fa fa-cog"></i>
+                  Settings
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="app-header-right">
+            <div class="header-btn-lg pr-0">
+              <div class="widget-content p-0">
+                <div class="widget-content-wrapper">
+                  <div class="widget-content-left">
+                    <div class="btn-group">
+                      <a
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        class="p-0 btn"
+                      >
+                        <img
+                          width="42"
+                          class="rounded-circle"
+                          src="{{ url_for('static', filename='images/avatars/1.jpg') }}"
+                          alt="avatars-1"
+                        />
+                        <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                      </a>
+                      <div
+                        tabindex="-1"
+                        role="menu"
+                        aria-hidden="true"
+                        class="dropdown-menu dropdown-menu-right"
+                      >
+                        <button
+                          type="button"
+                          tabindex="0"
+                          class="dropdown-item"
+                        >
+                          User Account
+                        </button>
+                        <button
+                          type="button"
+                          tabindex="0"
+                          class="dropdown-item"
+                        >
+                          Settings
+                        </button>
+                        <h6 tabindex="-1" class="dropdown-header">Header</h6>
+                        <button
+                          type="button"
+                          tabindex="0"
+                          class="dropdown-item"
+                        >
+                          Actions
+                        </button>
+                        <div tabindex="-1" class="dropdown-divider"></div>
+                        <button
+                          type="button"
+                          tabindex="0"
+                          class="dropdown-item"
+                        >
+                          Dividers
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="widget-content-left ml-3 header-user-info">
+                    <div class="widget-heading">Alina Mclourd</div>
+                    <div class="widget-subheading">VP People Manager</div>
+                  </div>
+                  <div class="widget-content-right header-user-info ml-3">
+                    <button
+                      type="button"
+                      class="btn-shadow p-1 btn btn-primary btn-sm show-toastr-example"
+                    >
+                      <i class="fa text-white fa-calendar pr-1 pl-1"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="app-main">
+        <div class="app-sidebar sidebar-shadow bg-royal sidebar-text-light">
+          <div class="app-header__logo">
+            <div class="logo-src"></div>
+            <div class="header__pane ml-auto">
+              <div>
+                <button
+                  type="button"
+                  class="hamburger close-sidebar-btn hamburger--elastic"
+                  data-class="closed-sidebar"
+                >
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="app-header__mobile-menu">
+            <div>
+              <button
+                type="button"
+                class="hamburger hamburger--elastic mobile-toggle-nav"
+              >
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="app-header__menu">
+            <span>
+              <button
+                type="button"
+                class="btn-icon btn-icon-only btn btn-danger btn-sm mobile-toggle-header-nav"
+              >
+                <span class="btn-icon-wrapper">
+                  <i class="fa fa-ellipsis-v fa-w-6"></i>
+                </span>
+              </button>
+            </span>
+          </div>
+          <div class="scrollbar-sidebar">
+            <div class="app-sidebar__inner">
+              <ul class="vertical-nav-menu">
+                <li class="app-sidebar__heading">Dashboards</li>
+                <li>
+                  <a href="/home">
+                    <i class="metismenu-icon pe-7s-rocket"></i>
+                    Home
+                  </a>
+                </li>
+                <li class="app-sidebar__heading">Navigations</li>
+                <!-- Admin Starts here -->
+                <li>
+                  <a href="#" class="mm-active">
+                    <i class="metismenu-icon pe-7s-users"></i>
+                    Admin
+                    <i
+                      class="metismenu-state-icon pe-7s-angle-down caret-left"
+                    ></i>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="/pelanggan">
+                        <i class="metismenu-icon"></i>
+                        Daftar Pelanggan
+                        <i
+                          class="metismenu-state-icon pe-7s-angle-down caret-left"
+                        ></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/pemasok">
+                        <i class="metismenu-icon"></i>
+                        Daftar Pemasok
+                        <i
+                          class="metismenu-state-icon pe-7s-angle-down caret-left"
+                        ></i>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Admin ends here -->
+
+                <!-- Master Data start here -->
+                <li>
+                  <a href="#">
+                    <i class="metismenu-icon pe-7s-server"></i>
+                    Master Data
+                    <i
+                      class="metismenu-state-icon pe-7s-angle-down caret-left"
+                    ></i>
+                  </a>
+                  <ul>
+                    <!-- dropdown pelanggan starts here -->
+                    <li>
+                      <a href="/barang">
+                        <i class="metismenu-icon"></i>
+                        Master Barang
+                        <i
+                          class="metismenu-state-icon pe-7s-angle-down caret-left"
+                        ></i>
+                      </a>
+                      <!-- <ul>
+                        <li>
+                          <a href="elements-dropdowns.html">
+                            <i class="metismenu-icon"> </i>Module 1
+                          </a>
+                        </li>
+                        <li>
+                          <a href="elements-dropdowns.html">
+                            <i class="metismenu-icon"> </i>Module 2
+                          </a>
+                        </li>
+                      </ul> -->
+                    </li>
+                    <!-- ends here -->
+                    <!-- dropdown barang starts here -->
+                    <li>
+                      <a href="/pemasok">
+                        <i class="metismenu-icon"></i>
+                        Data Pemasok
+                        <i
+                          class="metismenu-state-icon pe-7s-angle-down caret-left"
+                        ></i>
+                      </a>
+                    </li>
+                    <!-- dropdown barang ends here -->
+                    <!-- dropdown  penjual starts here-->
+                    <li>
+                      <a href="elements-buttons-standard.html">
+                        <i class="metismenu-icon"></i>
+                        Klasifikasi Barang
+                        <i
+                          class="metismenu-state-icon pe-7s-angle-down caret-left"
+                        ></i>
+                      </a>
+                    </li>
+                    <!-- dropdown penjual ends here -->
+                    <li>
+                      <a href="elements-buttons-standard.html">
+                        <i class="metismenu-icon"></i>
+                        Petugas
+                        <i
+                          class="metismenu-state-icon pe-7s-angle-down caret-left"
+                        ></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="elements-buttons-standard.html">
+                        <i class="metismenu-icon"></i>
+                        Barang
+                        <i
+                          class="metismenu-state-icon pe-7s-angle-down caret-left"
+                        ></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="elements-buttons-standard.html">
+                        <i class="metismenu-icon"></i>
+                        Jenis Barang
+                        <i
+                          class="metismenu-state-icon pe-7s-angle-down caret-left"
+                        ></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="elements-buttons-standard.html">
+                        <i class="metismenu-icon"></i>
+                        Satuan
+                        <i
+                          class="metismenu-state-icon pe-7s-angle-down caret-left"
+                        ></i>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Master Data ends here -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="app-main__outer">
+          <div class="app-main__inner">
+            <div class="app-page-title">
+              <div class="page-title-wrapper">
+                <div class="page-title-heading">
+                  <div class="page-title-icon">
+                    <i class="pe-7s-graph text-success"> </i>
+                  </div>
+                  <div>
+                    Form Layouts
+                    <div class="page-title-subheading">
+                      Build whatever layout you need with our Architect
+                      framework.
+                    </div>
+                  </div>
+                </div>
+                <div class="page-title-actions"></div>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div
+                class="tab-pane tabs-animation fade show active"
+                id="tab-content-0"
+                role="tabpanel"
+              >
+                <div class="col-lg-12">
+                  <div class="main-card mb-3 card">
+                    <div class="card-body">
+                      <h5 class="card-title">Daftar Pemasok</h5>
+                      <div class="col-xs-5">
+                        <label>
+                          <span>
+                            <i class="pe-7s-search"></i>
+                          </span>
+                          <input
+                            type="search"
+                            style="
+                              border-radius: 5px;
+                              box-shadow: none;
+                              outline: 0;
+                            "
+                            placeholder="search"
+                          />
+                        </label>
+                        <div style="float: right">
+                          <label>
+                            <select>
+                              <option value="10">10</option>
+                              <option value="25">25</option>
+                              <option value="50">50</option>
+                              <option value="100">100</option>
+                            </select>
+                          </label>
+                        </div>
+                        <button
+                          data-toggle="modal"
+                          class="mr-2"
+                          data-target=".bd-example-modal-lg"
+                          id="tombol-tambah"
+                        >
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div>
+                      <table class="mb-0 table table-bordered">
+                        <thead>
+                          <tr style="text-align: center">
+                            <th>Nama Pemasok</th>
+                            <th>Kode</th>
+                            <th>PIC</th>
+                            <th>Alamat</th>
+                            <th>Telepon</th>
+                            <th>No NPWP</th>
+                            <th>Tempo</th>
+                            <th>Cara Bayar</th>
+                            <th>#</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Robin</th>
+                            <td>123456</td>
+                            <td>Agus</td>
+                            <td>cikarang utara</td>
+                            <td>081234567</td>
+                            <td>30123923283238</td>
+                            <td>1 Bulan</td>
+                            <td>Tunai</td>
+                            <td style="text-align: center">
+                              <a href="#">
+                                <i class="fa fa-edit"></i>
+                              </a>
+                              <a
+                                data-toggle="modal"
+                                data-target=".bd-example-modal-sm"
+                              >
+                                <i class="fa fa-trash" id="tombol-hapus"></i>
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="col-lg-6">
+                      <nav class="" aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item">
+                            <a
+                              href="javascript:void(0);"
+                              class="page-link"
+                              aria-label="Previous"
+                              ><span aria-hidden="true">«</span
+                              ><span class="sr-only">Previous</span></a
+                            >
+                          </li>
+                          <li class="page-item">
+                            <a href="javascript:void(0);" class="page-link"
+                              >1</a
+                            >
+                          </li>
+                          <li class="page-item active">
+                            <a href="javascript:void(0);" class="page-link"
+                              >2</a
+                            >
+                          </li>
+                          <li class="page-item">
+                            <a href="javascript:void(0);" class="page-link"
+                              >3</a
+                            >
+                          </li>
+                          <li class="page-item">
+                            <a href="javascript:void(0);" class="page-link"
+                              >4</a
+                            >
+                          </li>
+                          <li class="page-item">
+                            <a href="javascript:void(0);" class="page-link"
+                              >5</a
+                            >
+                          </li>
+                          <li class="page-item">
+                            <a
+                              href="javascript:void(0);"
+                              class="page-link"
+                              aria-label="Next"
+                              ><span aria-hidden="true">»</span
+                              ><span class="sr-only">Next</span></a
+                            >
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tambah data pelanggan modal -->
+      <div
+        class="modal fade bd-example-modal-lg"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="myLargeModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">
+                Daftar Pelanggan
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body mx-3">
+              <form class="">
+                <div class="form-row">
+                  <div class="col-md-6">
+                    <div class="position-relative form-group">
+                      <label for="exampleEmail11" class="">Nama Pemasok</label
+                      ><input
+                        name="nama-pemasok"
+                        id="nama-pemasok"
+                        placeholder="ex: Arif"
+                        type="email"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="position-relative form-group">
+                      <label for="kode-pelanggan" class="">Kode</label
+                      ><input
+                        name="kode-pelanggan"
+                        id="kode-pelanggan"
+                        placeholder="ex : 12340854"
+                        type="number"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="position-relative form-group">
+                      <label for="exampleZip" class="">PIC</label
+                      ><input
+                        name="pic"
+                        id="nama-pic"
+                        type="text"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="position-relative form-group">
+                  <label for="exampleAddress" class="">Alamat</label
+                  ><input
+                    name="address"
+                    id="exampleAddress"
+                    placeholder="1234 Main St"
+                    type="text"
+                    class="form-control"
+                  />
+                </div>
+                <div class="position-relative form-group">
+                  <label for="exampleAddress2" class="">Telepon</label
+                  ><input
+                    name="Telepon"
+                    id="telepon"
+                    placeholder="Ex : 0812345676"
+                    type="text"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6">
+                    <div class="position-relative form-group">
+                      <label for="exampleCity" class="">No NPWP</label
+                      ><input
+                        name="nomor-npwp"
+                        id="nomor-npwp"
+                        type="number"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="position-relative form-group">
+                      <label for="exampleState" class="">Cara Bayar</label
+                      ><input
+                        name="bayar"
+                        id="cara-bayar"
+                        type="text"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger">Simpan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ends here modal  -->
+
+    <!-- small modal -->
+    <div
+      class="modal fade bd-example-modal-sm"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Delete Barang
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Yakin data ingin dihapus ?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Tidak
+            </button>
+            <button type="button" class="btn btn-primary">Ya</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ends here small modal -->
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/main.js') }}"
+    ></script>
+  </body>
+</html>
